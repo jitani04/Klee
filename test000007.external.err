@@ -1,0 +1,7 @@
+Error: failed external call: TIFFOpen
+Stack: 
+	#000055033 in tiffcp_main(argc=3, argv=139519750705152)
+	#100060991 in __klee_posix_wrapped_main()
+	#200007888 in __user_main(argcPtr=1, argvPtr=140734689579008, envp=140734689579024) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#300001235 in __uClibc_main(140718843498496, 1, 140734689579008, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#400001400 in main(1, 140734689579008)

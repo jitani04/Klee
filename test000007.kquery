@@ -1,0 +1,5 @@
+array in[512] : w32 -> w8 = symbolic
+(query [(Eq 73 (Read w8 0 in))
+         (Eq 73 (Read w8 1 in))
+         (Eq 42 (Read w8 2 in))]
+        false)

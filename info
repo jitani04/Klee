@@ -1,0 +1,23 @@
+klee --libc=uclibc --posix-runtime --max-time=300 --max-memory=2048 --max-sym-array-size=512 --only-output-states-covering-new --output-dir=klee-out-tiff-magic /src/libtiff-klee/tiffcp_for_klee_magic.bc
+PID: 6112
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-11-10 10:36:32
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-10 10:36:32
+Elapsed: 00:00:00
+KLEE: done: explored paths = 8
+KLEE: done: avg. constructs per query = 5
+KLEE: done: total queries = 9
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 9
+KLEE: done: query cex = 9
+
+KLEE: done: total instructions = 40446
+KLEE: done: completed paths = 6
+KLEE: done: partially completed paths = 2
+KLEE: done: generated tests = 7
